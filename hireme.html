@@ -195,5 +195,21 @@
                 </div>
             <!-- <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>-->
     </footer>
+<script>
+
+    function send(){
+        var name = document.querySelector('#name').value;
+        var number = document.querySelector('#number').value;
+        var message = document.querySelector('#message').value;
+
+        if(name == '' || number=='' || message==''){
+                alert('you left an input blank')
+        }else{
+            window.location.href = 'https://wa.me/+2349025980625?text=Hi there, i am '+ name +', '+ message +', this is my number ' +number
+        }
+
+    }
+    
+</script>
 </body>
 </html>
