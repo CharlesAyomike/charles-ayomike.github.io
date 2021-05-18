@@ -160,7 +160,7 @@
                 <label>
                     Name
                     <div>
-                        <input class="inp" type="text" required>        
+                        <input id="name" class="inp" type="text" required>        
                     </div>
                 </label>
             </div>
@@ -168,7 +168,7 @@
                 <label>
                     Mobile Number
                     <div>
-                        <input class="inp" type="text" required>        
+                        <input id="number" class="inp" type="text" required>        
                     </div>      
                 </label>
             </div>
@@ -176,7 +176,7 @@
                 <label>
                     Message
                     <div>
-                        <textarea class="inpmsg" type="text" required>
+                        <textarea id="message" class="inpmsg" type="text" required>
                         </textarea>      
                     </div>     
                 </label>
@@ -202,7 +202,7 @@
         var number = document.querySelector('#number').value;
         var message = document.querySelector('#message').value;
 
-        if(name == '' || number=='' || email=='' || message==''){
+        if(name == '' || number=='' || message==''){
                 alert('you left an input blank')
         }else{
             window.open('https://wa.me/+2349025980625?text=Hi there, i am '+ name +', '+ message +', this is my number ' +number)
